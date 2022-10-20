@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		351BDFBC290144B0007EB36F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BDFBB290144B0007EB36F /* AppDelegate.swift */; };
 		351BDFBE290144B0007EB36F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BDFBD290144B0007EB36F /* SceneDelegate.swift */; };
-		351BDFC0290144B0007EB36F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BDFBF290144B0007EB36F /* ViewController.swift */; };
-		351BDFC3290144B0007EB36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351BDFC1290144B0007EB36F /* Main.storyboard */; };
 		351BDFC5290144B3007EB36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351BDFC4290144B3007EB36F /* Assets.xcassets */; };
 		351BDFC8290144B3007EB36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351BDFC6290144B3007EB36F /* LaunchScreen.storyboard */; };
 		351BDFD3290144B3007EB36F /* SearchWithKakaoApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BDFD2290144B3007EB36F /* SearchWithKakaoApiTests.swift */; };
@@ -39,8 +37,6 @@
 		351BDFB8290144B0007EB36F /* SearchWithKakaoApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchWithKakaoApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		351BDFBB290144B0007EB36F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		351BDFBD290144B0007EB36F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		351BDFBF290144B0007EB36F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		351BDFC2290144B0007EB36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		351BDFC4290144B3007EB36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		351BDFC7290144B3007EB36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		351BDFC9290144B3007EB36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 			children = (
 				351BDFBB290144B0007EB36F /* AppDelegate.swift */,
 				351BDFBD290144B0007EB36F /* SceneDelegate.swift */,
-				351BDFBF290144B0007EB36F /* ViewController.swift */,
-				351BDFC1290144B0007EB36F /* Main.storyboard */,
 				351BDFC4290144B3007EB36F /* Assets.xcassets */,
 				351BDFC6290144B3007EB36F /* LaunchScreen.storyboard */,
 				351BDFC9290144B3007EB36F /* Info.plist */,
@@ -233,7 +227,6 @@
 			files = (
 				351BDFC8290144B3007EB36F /* LaunchScreen.storyboard in Resources */,
 				351BDFC5290144B3007EB36F /* Assets.xcassets in Resources */,
-				351BDFC3290144B0007EB36F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351BDFC0290144B0007EB36F /* ViewController.swift in Sources */,
 				351BDFBC290144B0007EB36F /* AppDelegate.swift in Sources */,
 				351BDFBE290144B0007EB36F /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		351BDFC1290144B0007EB36F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				351BDFC2290144B0007EB36F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		351BDFC6290144B3007EB36F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +426,9 @@
 				INFOPLIST_FILE = SearchWithKakaoApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +454,9 @@
 				INFOPLIST_FILE = SearchWithKakaoApi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
