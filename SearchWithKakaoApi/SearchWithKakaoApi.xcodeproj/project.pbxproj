@@ -17,6 +17,8 @@
 		351BDFED29015C4A007EB36F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 351BDFEC29015C4A007EB36F /* RxCocoa */; };
 		351BDFEF29015C4A007EB36F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 351BDFEE29015C4A007EB36F /* RxRelay */; };
 		351BDFF129015C4A007EB36F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 351BDFF029015C4A007EB36F /* RxSwift */; };
+		351BDFF429015C7D007EB36F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 351BDFF329015C7D007EB36F /* SDWebImage */; };
+		351BDFF729015CA9007EB36F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 351BDFF629015CA9007EB36F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,9 @@
 			files = (
 				351BDFF129015C4A007EB36F /* RxSwift in Frameworks */,
 				351BDFEF29015C4A007EB36F /* RxRelay in Frameworks */,
+				351BDFF429015C7D007EB36F /* SDWebImage in Frameworks */,
 				351BDFED29015C4A007EB36F /* RxCocoa in Frameworks */,
+				351BDFF729015CA9007EB36F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +151,8 @@
 				351BDFEC29015C4A007EB36F /* RxCocoa */,
 				351BDFEE29015C4A007EB36F /* RxRelay */,
 				351BDFF029015C4A007EB36F /* RxSwift */,
+				351BDFF329015C7D007EB36F /* SDWebImage */,
+				351BDFF629015CA9007EB36F /* SnapKit */,
 			);
 			productName = SearchWithKakaoApi;
 			productReference = 351BDFB8290144B0007EB36F /* SearchWithKakaoApi.app */;
@@ -222,6 +228,8 @@
 			mainGroup = 351BDFAF290144B0007EB36F;
 			packageReferences = (
 				351BDFEB29015C4A007EB36F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				351BDFF229015C7D007EB36F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				351BDFF529015CA9007EB36F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 351BDFB9290144B0007EB36F /* Products */;
 			projectDirPath = "";
@@ -610,6 +618,22 @@
 				kind = branch;
 			};
 		};
+		351BDFF229015C7D007EB36F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		351BDFF529015CA9007EB36F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -627,6 +651,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 351BDFEB29015C4A007EB36F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		351BDFF329015C7D007EB36F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 351BDFF229015C7D007EB36F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		351BDFF629015CA9007EB36F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 351BDFF529015CA9007EB36F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
