@@ -65,7 +65,7 @@ class MainView: UIView {
     }
     
     private func attribute() {
-        
+        backgroundColor = .white
     }
     
     private func layout() {
