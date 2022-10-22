@@ -26,6 +26,15 @@
         "branch" : "develop",
         "revision" : "07c5d1f6044701d97e94dc11157259e8811977be"
       }
+    },
+    {
+      "identity" : "umabasicalertkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/umaKim/UmaBasicAlertKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b38fab64f986a2a2447f06a05566111e44e84a85"
+      }
     }
   ],
   "version" : 2
